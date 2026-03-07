@@ -101,7 +101,8 @@
     "themeOrange": "Orange",
     "themeCyan": "Cyan",
     "endpoints": "Endpunkte",
-    "playground": "Spielwiese"
+    "playground": "Spielwiese",
+    "agents": "Agenten"
   },
   "themesPage": {
     "title": "Themen",
@@ -1731,7 +1732,8 @@
     "cacheCreationTokenDesc": "Token, die zum Erstellen von Cache-Einträgen verwendet werden (Fallback auf Eingaberate)",
     "customPricingNote": "Sie können die Standardpreise für bestimmte Modelle überschreiben. Benutzerdefinierte Überschreibungen haben Vorrang vor automatisch erkannten Preisen.",
     "editPricing": "Preise bearbeiten",
-    "viewFullDetails": "Vollständige Details anzeigen"
+    "viewFullDetails": "Vollständige Details anzeigen",
+    "themeCoral": "Koralle"
   },
   "translator": {
     "title": "Übersetzer",

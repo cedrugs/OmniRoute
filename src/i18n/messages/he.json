@@ -101,7 +101,8 @@
     "themeOrange": "Orange",
     "themeCyan": "Cyan",
     "endpoints": "נקודות קצה",
-    "playground": "Playground"
+    "playground": "Playground",
+    "agents": "סוכנים"
   },
   "themesPage": {
     "title": "Themes",
@@ -1731,7 +1732,8 @@
     "cacheCreationTokenDesc": "אסימונים המשמשים ליצירת ערכי מטמון (חזרה לקצב קלט)",
     "customPricingNote": "אתה יכול לעקוף את תמחור ברירת המחדל עבור דגמים ספציפיים. עקיפות מותאמות אישית מקבלות עדיפות על פני תמחור שזוהה אוטומטית.",
     "editPricing": "ערוך תמחור",
-    "viewFullDetails": "צפה בפרטים המלאים"
+    "viewFullDetails": "צפה בפרטים המלאים",
+    "themeCoral": "אלמוג"
   },
   "translator": {
     "title": "מתרגם",

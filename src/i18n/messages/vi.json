@@ -101,7 +101,8 @@
     "themeOrange": "Orange",
     "themeCyan": "Cyan",
     "endpoints": "Điểm cuối",
-    "playground": "Playground"
+    "playground": "Playground",
+    "agents": "Tác nhân"
   },
   "themesPage": {
     "title": "Themes",
@@ -1731,7 +1732,8 @@
     "cacheCreationTokenDesc": "Mã thông báo được sử dụng để tạo mục nhập bộ đệm (dự phòng tốc độ đầu vào)",
     "customPricingNote": "Bạn có thể ghi đè giá mặc định cho các kiểu máy cụ thể. Ghi đè tùy chỉnh được ưu tiên hơn giá được tự động phát hiện.",
     "editPricing": "Chỉnh sửa giá",
-    "viewFullDetails": "Xem chi tiết đầy đủ"
+    "viewFullDetails": "Xem chi tiết đầy đủ",
+    "themeCoral": "San hô"
   },
   "translator": {
     "title": "Người phiên dịch",

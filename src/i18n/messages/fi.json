@@ -101,7 +101,8 @@
     "themeOrange": "Oranssi",
     "themeCyan": "Syaani",
     "endpoints": "Päätepisteet",
-    "playground": "Leikkipaikka"
+    "playground": "Leikkipaikka",
+    "agents": "Agentit"
   },
   "themesPage": {
     "title": "Teemat",
@@ -1731,7 +1732,8 @@
     "cacheCreationTokenDesc": "Välimuistimerkintöjen luomiseen käytetyt tunnukset (varausarvo syöttönopeuteen)",
     "customPricingNote": "Voit ohittaa tiettyjen mallien oletushinnoittelun. Mukautetut ohitukset ovat etusijalla automaattisesti tunnistettuihin hinnoitteluun nähden.",
     "editPricing": "Muokkaa hinnoittelua",
-    "viewFullDetails": "Näytä täydelliset tiedot"
+    "viewFullDetails": "Näytä täydelliset tiedot",
+    "themeCoral": "Koralli"
   },
   "translator": {
     "title": "Kääntäjä",

@@ -1,35 +1,121 @@
-/**
- * API Route: /api/acp/agents
- *
- * Returns the list of detected CLI agents and their availability status.
- * Used by the dashboard to show ACP transport options.
- */
-
 import { NextResponse } from "next/server";
-import { detectInstalledAgents } from "@/lib/acp";
-
-export const dynamic = "force-dynamic";
+import {
+  detectInstalledAgents,
+  refreshAgentCache,
+  setCustomAgents,
+  getCustomAgentDefs,
+  type CustomAgentDef,
+} from "@/lib/acp/registry";
+import { getSettings, updateSettings } from "@/lib/localDb";
 
 export async function GET() {
   try {
+    // Load custom agents from settings on each GET to stay in sync
+    const settings = await getSettings();
+    if (settings.customAgents) {
+      setCustomAgents(settings.customAgents as CustomAgentDef[]);
+    }
+
     const agents = detectInstalledAgents();
+    const installed = agents.filter((a) => a.installed).length;
+    const total = agents.length;
+
     return NextResponse.json({
-      agents: agents.map((a) => ({
-        id: a.id,
-        name: a.name,
-        binary: a.binary,
-        version: a.version,
-        installed: a.installed,
-        providerAlias: a.providerAlias,
-        protocol: a.protocol,
-      })),
-      available: agents.filter((a) => a.installed).length,
-      total: agents.length,
+      agents,
+      summary: {
+        total,
+        installed,
+        notFound: total - installed,
+        builtIn: agents.filter((a) => !a.isCustom).length,
+        custom: agents.filter((a) => a.isCustom).length,
+      },
     });
-  } catch (error: any) {
-    return NextResponse.json(
-      { error: error.message || "Failed to detect agents" },
-      { status: 500 }
-    );
+  } catch (error) {
+    console.error("Error detecting agents:", error);
+    return NextResponse.json({ error: "Failed to detect agents" }, { status: 500 });
+  }
+}
+
+export async function POST(request: Request) {
+  try {
+    const body = await request.json();
+
+    if (body.action === "refresh") {
+      const agents = refreshAgentCache();
+      return NextResponse.json({ agents, refreshed: true });
+    }
+
+    // Add custom agent
+    const { id, name, binary, versionCommand, providerAlias, spawnArgs, protocol } = body;
+    if (!id || !name || !binary || !versionCommand) {
+      return NextResponse.json(
+        { error: "Missing required fields: id, name, binary, versionCommand" },
+        { status: 400 }
+      );
+    }
+
+    const newAgent: CustomAgentDef = {
+      id: id.toLowerCase().replace(/[^a-z0-9-]/g, "-"),
+      name,
+      binary,
+      versionCommand,
+      providerAlias: providerAlias || id,
+      spawnArgs: spawnArgs || [],
+      protocol: protocol || "stdio",
+    };
+
+    // Load current, append, save
+    const settings = await getSettings();
+    const current: CustomAgentDef[] = (settings.customAgents as CustomAgentDef[]) || [];
+
+    // Avoid duplicates
+    if (current.some((a) => a.id === newAgent.id)) {
+      return NextResponse.json(
+        { error: `Agent with id '${newAgent.id}' already exists` },
+        { status: 409 }
+      );
+    }
+
+    const updated = [...current, newAgent];
+    await updateSettings({ customAgents: updated });
+    setCustomAgents(updated);
+
+    // Refresh cache to detect the new agent
+    const agents = refreshAgentCache();
+    return NextResponse.json({ agents, added: newAgent });
+  } catch (error) {
+    console.error("Error adding custom agent:", error);
+    return NextResponse.json({ error: "Failed to add agent" }, { status: 500 });
+  }
+}
+
+export async function DELETE(request: Request) {
+  try {
+    const { searchParams } = new URL(request.url);
+    const agentId = searchParams.get("id");
+
+    if (!agentId) {
+      return NextResponse.json({ error: "Missing agent id" }, { status: 400 });
+    }
+
+    const settings = await getSettings();
+    const current: CustomAgentDef[] = (settings.customAgents as CustomAgentDef[]) || [];
+    const updated = current.filter((a) => a.id !== agentId);
+
+    if (updated.length === current.length) {
+      return NextResponse.json(
+        { error: `Agent '${agentId}' not found in custom agents` },
+        { status: 404 }
+      );
+    }
+
+    await updateSettings({ customAgents: updated });
+    setCustomAgents(updated);
+    const agents = refreshAgentCache();
+
+    return NextResponse.json({ agents, removed: agentId });
+  } catch (error) {
+    console.error("Error removing custom agent:", error);
+    return NextResponse.json({ error: "Failed to remove agent" }, { status: 500 });
   }
 }

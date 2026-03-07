@@ -101,7 +101,8 @@
     "themeOrange": "Orange",
     "themeCyan": "Cyan",
     "endpoints": "Ändpunkter",
-    "playground": "Lekplats"
+    "playground": "Lekplats",
+    "agents": "Agenter"
   },
   "themesPage": {
     "title": "Themes",
@@ -1731,7 +1732,8 @@
     "cacheCreationTokenDesc": "Tokens som används för att skapa cacheposter (återgång till inmatningshastighet)",
     "customPricingNote": "Du kan åsidosätta standardpriser för specifika modeller. Anpassade åsidosättningar har prioritet framför automatiskt identifierade priser.",
     "editPricing": "Redigera prissättning",
-    "viewFullDetails": "Visa fullständiga detaljer"
+    "viewFullDetails": "Visa fullständiga detaljer",
+    "themeCoral": "Korall"
   },
   "translator": {
     "title": "Översättare",

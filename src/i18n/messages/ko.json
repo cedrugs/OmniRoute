@@ -101,7 +101,8 @@
     "themeOrange": "Orange",
     "themeCyan": "Cyan",
     "endpoints": "엔드포인트",
-    "playground": "플레이그라운드"
+    "playground": "플레이그라운드",
+    "agents": "에이전트"
   },
   "themesPage": {
     "title": "Themes",
@@ -1731,7 +1732,8 @@
     "cacheCreationTokenDesc": "캐시 항목을 생성하는 데 사용되는 토큰(입력 속도로 대체)",
     "customPricingNote": "특정 모델의 기본 가격을 재정의할 수 있습니다. 맞춤 재정의는 자동 감지된 가격보다 우선 적용됩니다.",
     "editPricing": "가격 편집",
-    "viewFullDetails": "전체 세부정보 보기"
+    "viewFullDetails": "전체 세부정보 보기",
+    "themeCoral": "코랄"
   },
   "translator": {
     "title": "번역기",

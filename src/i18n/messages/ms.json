@@ -101,7 +101,8 @@
     "themeOrange": "Orange",
     "themeCyan": "Cyan",
     "endpoints": "Titik Akhir",
-    "playground": "Playground"
+    "playground": "Playground",
+    "agents": "Ejen"
   },
   "themesPage": {
     "title": "Themes",
@@ -1731,7 +1732,8 @@
     "cacheCreationTokenDesc": "Token yang digunakan untuk mencipta entri cache (sandar kepada kadar input)",
     "customPricingNote": "Anda boleh mengatasi harga lalai untuk model tertentu. Penggantian tersuai diutamakan berbanding harga yang dikesan secara automatik.",
     "editPricing": "Edit Harga",
-    "viewFullDetails": "Lihat Butiran Penuh"
+    "viewFullDetails": "Lihat Butiran Penuh",
+    "themeCoral": "Koral"
   },
   "translator": {
     "title": "Penterjemah",

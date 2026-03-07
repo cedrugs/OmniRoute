@@ -30,6 +30,7 @@ const navItemDefs = [
 const debugItemDefs = [
   { href: "/dashboard/translator", i18nKey: "translator", icon: "translate" },
   { href: "/dashboard/playground", i18nKey: "playground", icon: "science" },
+  { href: "/dashboard/agents", i18nKey: "agents", icon: "smart_toy" },
 ];
 
 const systemItemDefs = [{ href: "/dashboard/settings", i18nKey: "settings", icon: "settings" }];

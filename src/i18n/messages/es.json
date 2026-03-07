@@ -101,7 +101,8 @@
     "themeOrange": "Naranja",
     "themeCyan": "cian",
     "endpoints": "Endpoints",
-    "playground": "Playground"
+    "playground": "Playground",
+    "agents": "Agentes"
   },
   "themesPage": {
     "title": "Temas",
@@ -1731,7 +1732,8 @@
     "cacheCreationTokenDesc": "Tokens utilizados para crear entradas de caché (retroceso a la tasa de entrada)",
     "customPricingNote": "Puede anular los precios predeterminados para modelos específicos. Las anulaciones personalizadas tienen prioridad sobre los precios detectados automáticamente.",
     "editPricing": "Editar precios",
-    "viewFullDetails": "Ver todos los detalles"
+    "viewFullDetails": "Ver todos los detalles",
+    "themeCoral": "Coral"
   },
   "translator": {
     "title": "Traductor",

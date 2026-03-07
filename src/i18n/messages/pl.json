@@ -101,7 +101,8 @@
     "themeOrange": "Orange",
     "themeCyan": "Cyan",
     "endpoints": "Punkty końcowe",
-    "playground": "Plac zabaw"
+    "playground": "Plac zabaw",
+    "agents": "Agenci"
   },
   "themesPage": {
     "title": "Themes",
@@ -1731,7 +1732,8 @@
     "cacheCreationTokenDesc": "Tokeny używane do tworzenia wpisów w pamięci podręcznej (powrót do szybkości wprowadzania)",
     "customPricingNote": "Możesz zastąpić domyślne ceny dla określonych modeli. Zastąpienia niestandardowe mają pierwszeństwo przed automatycznie wykrytymi cenami.",
     "editPricing": "Edytuj ceny",
-    "viewFullDetails": "Zobacz pełne szczegóły"
+    "viewFullDetails": "Zobacz pełne szczegóły",
+    "themeCoral": "Koral"
   },
   "translator": {
     "title": "Tłumacz",

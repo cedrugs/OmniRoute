@@ -101,7 +101,8 @@
     "themeOrange": "Orange",
     "themeCyan": "Cyan",
     "endpoints": "Кінцеві точки",
-    "playground": "Playground"
+    "playground": "Playground",
+    "agents": "Агенти"
   },
   "themesPage": {
     "title": "Themes",
@@ -1731,7 +1732,8 @@
     "cacheCreationTokenDesc": "Токени, що використовуються для створення записів кешу (резервний вихід до швидкості введення)",
     "customPricingNote": "Ви можете змінити ціни за умовчанням для певних моделей. Спеціальні зміни мають пріоритет над автоматично визначеними цінами.",
     "editPricing": "Редагувати ціни",
-    "viewFullDetails": "Переглянути повну інформацію"
+    "viewFullDetails": "Переглянути повну інформацію",
+    "themeCoral": "Корал"
   },
   "translator": {
     "title": "Перекладач",

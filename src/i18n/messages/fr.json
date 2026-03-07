@@ -101,7 +101,8 @@
     "themeOrange": "Orange",
     "themeCyan": "Cyan",
     "endpoints": "Points d'accès",
-    "playground": "Playground"
+    "playground": "Playground",
+    "agents": "Agents"
   },
   "themesPage": {
     "title": "Thèmes",
@@ -1731,7 +1732,8 @@
     "cacheCreationTokenDesc": "Jetons utilisés pour créer des entrées de cache (repli sur le débit d'entrée)",
     "customPricingNote": "Vous pouvez remplacer le prix par défaut pour des modèles spécifiques. Les remplacements personnalisés ont la priorité sur les prix détectés automatiquement.",
     "editPricing": "Modifier le prix",
-    "viewFullDetails": "Afficher tous les détails"
+    "viewFullDetails": "Afficher tous les détails",
+    "themeCoral": "Corail"
   },
   "translator": {
     "title": "Traducteur",

@@ -101,7 +101,8 @@
     "themeOrange": "Orange",
     "themeCyan": "Cyan",
     "endpoints": "จุดปลายทาง",
-    "playground": "Playground"
+    "playground": "Playground",
+    "agents": "เอเจนต์"
   },
   "themesPage": {
     "title": "ธีมส์",
@@ -1731,7 +1732,8 @@
     "cacheCreationTokenDesc": "โทเค็นที่ใช้ในการสร้างรายการแคช (สำรองไปยังอัตราการป้อนข้อมูล)",
     "customPricingNote": "คุณสามารถแทนที่ราคาเริ่มต้นสำหรับรุ่นเฉพาะได้ การแทนที่แบบกำหนดเองจะมีลำดับความสำคัญมากกว่าการกำหนดราคาที่ตรวจพบอัตโนมัติ",
     "editPricing": "แก้ไขราคา",
-    "viewFullDetails": "ดูรายละเอียดทั้งหมด"
+    "viewFullDetails": "ดูรายละเอียดทั้งหมด",
+    "themeCoral": "คอรัล"
   },
   "translator": {
     "title": "นักแปล",

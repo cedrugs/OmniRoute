@@ -101,7 +101,8 @@
     "themeOrange": "Orange",
     "themeCyan": "Cyan",
     "endpoints": "Puncte finale",
-    "playground": "Playground"
+    "playground": "Playground",
+    "agents": "Agenți"
   },
   "themesPage": {
     "title": "Themes",
@@ -1731,7 +1732,8 @@
     "cacheCreationTokenDesc": "Jetoane utilizate pentru a crea intrări în cache (retur la rata de intrare)",
     "customPricingNote": "Puteți suprascrie prețurile implicite pentru anumite modele. Anulările personalizate au prioritate față de prețurile detectate automat.",
     "editPricing": "Editați prețul",
-    "viewFullDetails": "Vezi detalii complete"
+    "viewFullDetails": "Vezi detalii complete",
+    "themeCoral": "Coral"
   },
   "translator": {
     "title": "Traducător",

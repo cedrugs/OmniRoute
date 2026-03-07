@@ -101,7 +101,8 @@
     "themeOrange": "Orange",
     "themeCyan": "Cyan",
     "endpoints": "Endepunkter",
-    "playground": "Lekeplass"
+    "playground": "Lekeplass",
+    "agents": "Agenter"
   },
   "themesPage": {
     "title": "Themes",
@@ -1731,7 +1732,8 @@
     "cacheCreationTokenDesc": "Tokens som brukes til å lage cache-oppføringer (tilbake til inngangshastighet)",
     "customPricingNote": "Du kan overstyre standardpriser for spesifikke modeller. Egendefinerte overstyringer prioriteres fremfor automatisk oppdagede priser.",
     "editPricing": "Rediger priser",
-    "viewFullDetails": "Se alle detaljer"
+    "viewFullDetails": "Se alle detaljer",
+    "themeCoral": "Korall"
   },
   "translator": {
     "title": "Oversetter",

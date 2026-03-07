@@ -101,7 +101,8 @@
     "themeOrange": "narancssárga",
     "themeCyan": "Cián",
     "endpoints": "Végpontok",
-    "playground": "Játszótér"
+    "playground": "Játszótér",
+    "agents": "Ügynökök"
   },
   "themesPage": {
     "title": "Témák",
@@ -1731,7 +1732,8 @@
     "cacheCreationTokenDesc": "A gyorsítótár bejegyzéseinek létrehozására használt tokenek (vissza a beviteli sebességre)",
     "customPricingNote": "Egyes modelleknél felülbírálhatja az alapértelmezett árazást. Az egyéni felülbírálások elsőbbséget élveznek az automatikusan észlelt árképzéssel szemben.",
     "editPricing": "Árak szerkesztése",
-    "viewFullDetails": "Teljes részletek megtekintése"
+    "viewFullDetails": "Teljes részletek megtekintése",
+    "themeCoral": "Korall"
   },
   "translator": {
     "title": "Fordító",

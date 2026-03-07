@@ -101,7 +101,8 @@
     "themeOrange": "Orange",
     "themeCyan": "Cyan",
     "endpoints": "Eindpunten",
-    "playground": "Speeltuin"
+    "playground": "Speeltuin",
+    "agents": "Agenten"
   },
   "themesPage": {
     "title": "Themes",
@@ -1731,7 +1732,8 @@
     "cacheCreationTokenDesc": "Tokens die worden gebruikt om cache-items te maken (terugval op invoersnelheid)",
     "customPricingNote": "U kunt de standaardprijzen voor specifieke modellen overschrijven. Aangepaste overschrijvingen hebben voorrang op automatisch gedetecteerde prijzen.",
     "editPricing": "Prijzen bewerken",
-    "viewFullDetails": "Bekijk volledige details"
+    "viewFullDetails": "Bekijk volledige details",
+    "themeCoral": "Koraal"
   },
   "translator": {
     "title": "Vertaler",

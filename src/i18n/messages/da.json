@@ -101,7 +101,8 @@
     "themeOrange": "Orange",
     "themeCyan": "Turkis",
     "endpoints": "Endpoints",
-    "playground": "Legeplads"
+    "playground": "Legeplads",
+    "agents": "Agenter"
   },
   "themesPage": {
     "title": "Temaer",
@@ -1731,7 +1732,8 @@
     "cacheCreationTokenDesc": "Tokens, der bruges til at oprette cacheposter (tilbage til inputhastighed)",
     "customPricingNote": "Du kan tilsidesætte standardpriser for specifikke modeller. Tilpassede tilsidesættelser har prioritet frem for automatisk registrerede priser.",
     "editPricing": "Rediger prissætning",
-    "viewFullDetails": "Se alle detaljer"
+    "viewFullDetails": "Se alle detaljer",
+    "themeCoral": "Koral"
   },
   "translator": {
     "title": "Oversætter",

@@ -101,7 +101,8 @@
     "themeOrange": "Orange",
     "themeCyan": "Cyan",
     "endpoints": "Endpoints",
-    "playground": "Playground"
+    "playground": "Playground",
+    "agents": "Agentes"
   },
   "themesPage": {
     "title": "Themes",
@@ -1736,7 +1737,8 @@
     "cacheCreationTokenDesc": "Tokens usados para criar entradas de cache (fallback para taxa de input)",
     "customPricingNote": "Você pode sobrescrever preços padrão para modelos específicos. Sobrescritas personalizadas têm prioridade sobre preços detectados automaticamente.",
     "editPricing": "Editar Preços",
-    "viewFullDetails": "Ver Detalhes Completos"
+    "viewFullDetails": "Ver Detalhes Completos",
+    "themeCoral": "Coral"
   },
   "translator": {
     "title": "Tradutor",
@@ -2421,5 +2423,22 @@
     "featureWebhooks": "Configuração de webhooks e assinaturas de eventos",
     "featureSwagger": "Geração automática de specs OpenAPI / Swagger",
     "featureAuth": "Gestão de chaves API e escopos OAuth por endpoint"
+  },
+  "agents": {
+    "title": "Agentes CLI",
+    "description": "Descubra agentes CLI instalados no seu sistema. Adicione agentes customizados para auto-detecção.",
+    "refresh": "Atualizar",
+    "installed": "Instalado",
+    "notFound": "Não encontrado",
+    "builtIn": "Nativo",
+    "custom": "Customizado",
+    "remove": "Remover",
+    "addCustomAgent": "Adicionar Agente Customizado",
+    "addCustomAgentDesc": "Registre qualquer ferramenta CLI para detecção. Ela será verificada automaticamente ao atualizar.",
+    "agentName": "Nome do Agente",
+    "binaryName": "Nome do Binário",
+    "versionCommand": "Comando de Versão",
+    "spawnArgs": "Argumentos",
+    "addAgent": "Adicionar Agente"
   }
 }

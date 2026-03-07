@@ -73,6 +73,7 @@
     "settings": "Settings",
     "translator": "Translator",
     "playground": "Playground",
+    "agents": "Agents",
     "docs": "Docs",
     "issues": "Issues",
     "endpoints": "Endpoints",
@@ -1748,7 +1749,8 @@
     "cacheCreationTokenDesc": "Tokens used to create cache entries (fallback to input rate)",
     "customPricingNote": "You can override default pricing for specific models. Custom overrides take priority over auto-detected pricing.",
     "editPricing": "Edit Pricing",
-    "viewFullDetails": "View Full Details"
+    "viewFullDetails": "View Full Details",
+    "themeCoral": "Coral"
   },
   "translator": {
     "title": "Translator",
@@ -2421,5 +2423,22 @@
     "termsSection5Text": "OmniRoute is provided \"as is\" without warranty of any kind. We are not responsible for any costs incurred through API usage, service disruptions, or data loss. Always maintain backups of your configuration.",
     "termsSection6Title": "6. Open Source",
     "termsSection6Text": "OmniRoute is open-source software. You are free to inspect, modify, and distribute it under the terms of its license."
+  },
+  "agents": {
+    "title": "CLI Agents",
+    "description": "Discover installed CLI agents on your system. Add custom agents for auto-detection.",
+    "refresh": "Refresh",
+    "installed": "Installed",
+    "notFound": "Not Found",
+    "builtIn": "Built-in",
+    "custom": "Custom",
+    "remove": "Remove",
+    "addCustomAgent": "Add Custom Agent",
+    "addCustomAgentDesc": "Register any CLI tool for detection. It will be scanned automatically on refresh.",
+    "agentName": "Agent Name",
+    "binaryName": "Binary Name",
+    "versionCommand": "Version Command",
+    "spawnArgs": "Spawn Args",
+    "addAgent": "Add Agent"
   }
 }
