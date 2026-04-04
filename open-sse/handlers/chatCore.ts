@@ -1341,8 +1341,7 @@ export async function handleChatCore({
     provider === "qwen" &&
     parsedStatusCode === HTTP_STATUS.BAD_REQUEST &&
     parsedMessage &&
-    (parsedMessage.toLowerCase().includes("session has expired") ||
-      parsedMessage.toLowerCase().includes("invalid_parameter_error"));
+    parsedMessage.toLowerCase().includes("session has expired");
 
   const streamOptionsOnlyFailed = false; // TODO: properly track stream options failure? (placeholder from existing logic)
 
