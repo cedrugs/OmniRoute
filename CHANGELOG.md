@@ -2,6 +2,10 @@
 
 ## [Unreleased]
 
+### 🐛 Bug Fixes
+
+- **Legacy OpenAI-Compatible Responses Routing:** Fixed legacy/imported OpenAI-compatible providers (for example `openai-compatible-sp-openai`) incorrectly routing Chat Completions traffic to `/chat/completions` when the real provider node was configured as `apiType: "responses"`. OmniRoute now treats `providerSpecificData.apiType` as authoritative across routing, executors, and translator tools, avoiding false empty-content failures during combo/provider smoke tests.
+
 ---
 
 ## [3.5.4] — 2026-04-07
