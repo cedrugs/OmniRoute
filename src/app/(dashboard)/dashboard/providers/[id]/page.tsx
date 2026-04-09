@@ -43,6 +43,7 @@ import {
   type ModelCompatProtocolKey,
 } from "@/shared/constants/modelCompat";
 import { resolveManagedModelAlias } from "@/shared/utils/providerModelAliases";
+import { maskEmail } from "@/shared/utils/maskEmail";
 
 type CompatByProtocolMap = Partial<
   Record<
@@ -5079,7 +5080,9 @@ function EditConnectionModal({ isOpen, connection, onSave, onClose }: EditConnec
         {isOAuth && connection.email && (
           <div className="bg-sidebar/50 p-3 rounded-lg">
             <p className="text-sm text-text-muted mb-1">{t("email")}</p>
-            <p className="font-medium">{connection.email}</p>
+            <p className="font-medium" title={connection.email}>
+              {maskEmail(connection.email)}
+            </p>
           </div>
         )}
         {isOAuth && (
