@@ -165,15 +165,12 @@ export default function UsageAnalytics() {
       {/* Secondary Metrics — compact grid */}
       <CompactStatGrid
         stats={[
+          // Infrastructure
           { icon: "group", label: "Accounts", value: s.uniqueAccounts || 0 },
+          { icon: "dns", label: "Providers", value: providerCount, color: "text-indigo-500" },
           { icon: "vpn_key", label: "API Keys", value: s.uniqueApiKeys || 0 },
           { icon: "model_training", label: "Models", value: s.uniqueModels || 0 },
-          {
-            icon: "swap_horiz",
-            label: "Fallback Rate",
-            value: `${Number(s.fallbackRatePct || 0).toFixed(1)}%`,
-            color: "text-amber-500",
-          },
+          // Performance
           {
             icon: "speed",
             label: "Avg Tokens/Req",
@@ -192,10 +189,16 @@ export default function UsageAnalytics() {
             value: `${ioRatio}x`,
             color: "text-violet-500",
           },
+          {
+            icon: "swap_horiz",
+            label: "Fallback Rate",
+            value: `${Number(s.fallbackRatePct || 0).toFixed(1)}%`,
+            color: "text-amber-500",
+          },
+          // Highlights
           { icon: "star", label: "Top Model", value: topModel, color: "text-pink-500" },
           { icon: "cloud", label: "Top Provider", value: topProvider, color: "text-teal-500" },
           { icon: "today", label: "Busiest Day", value: busiestDay, color: "text-rose-500" },
-          { icon: "dns", label: "Providers", value: providerCount, color: "text-indigo-500" },
           {
             icon: "network_node",
             label: "Diversity Score",
