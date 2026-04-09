@@ -84,7 +84,7 @@ export function SortIndicator({ active, sortOrder }: { active: boolean; sortOrde
   );
 }
 
-// ── StatCard ───────────────────────────────────────────────────────────────
+// ── StatCard (primary KPI) ─────────────────────────────────────────────────
 
 export function StatCard({
   icon,
@@ -101,14 +101,52 @@ export function StatCard({
 }) {
   return (
     <Card className="px-4 py-3 flex flex-col gap-1 min-w-0">
-      <div className="flex items-center gap-2 text-text-muted text-xs uppercase font-semibold tracking-wider whitespace-nowrap overflow-hidden text-ellipsis">
-        <span className="material-symbols-outlined text-[16px] shrink-0">{icon}</span>
+      <div className="flex items-center gap-1.5 text-text-muted text-[11px] uppercase font-semibold tracking-wide min-w-0">
+        <span className="material-symbols-outlined text-[14px] shrink-0">{icon}</span>
         <span className="truncate">{label}</span>
       </div>
       <span className={`text-2xl font-bold ${color} truncate`} title={String(value)}>
         {value}
       </span>
       {subValue && <span className="text-xs text-text-muted truncate">{subValue}</span>}
+    </Card>
+  );
+}
+
+// ── CompactStatGrid (secondary metrics in a single card) ──────────────────
+
+export function CompactStatGrid({
+  stats,
+}: {
+  stats: Array<{
+    icon: string;
+    label: string;
+    value: any;
+    color?: string;
+  }>;
+}) {
+  return (
+    <Card className="px-4 py-3">
+      <div className="grid grid-cols-2 sm:grid-cols-3 2xl:grid-cols-4 gap-x-5 gap-y-2.5">
+        {stats.map((stat, i) => (
+          <div key={i} className="flex items-center justify-between gap-2 min-w-0 py-0.5">
+            <div className="flex items-center gap-1.5 min-w-0 shrink-0 max-w-[55%]">
+              <span className="material-symbols-outlined text-[14px] text-text-muted shrink-0">
+                {stat.icon}
+              </span>
+              <span className="text-[11px] uppercase font-semibold tracking-wide text-text-muted truncate">
+                {stat.label}
+              </span>
+            </div>
+            <span
+              className={`text-sm font-bold truncate min-w-0 ${stat.color || "text-text-main"}`}
+              title={String(stat.value)}
+            >
+              {stat.value}
+            </span>
+          </div>
+        ))}
+      </div>
     </Card>
   );
 }
@@ -191,7 +229,7 @@ export function ActivityHeatmap({ activityMap }) {
   }
 
   return (
-    <Card className="p-4 h-full">
+    <Card className="p-4 h-full min-w-0 overflow-hidden">
       <div className="flex items-center justify-between mb-3">
         <h3 className="text-sm font-semibold text-text-muted uppercase tracking-wider">Activity</h3>
         <span className="text-xs text-text-muted">
