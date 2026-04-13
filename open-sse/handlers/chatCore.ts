@@ -1301,6 +1301,7 @@ export async function handleChatCore({
       signal?: AbortSignal | null;
       log?: unknown;
       upstreamExtraHeaders?: Record<string, string> | null;
+      clientHeaders?: Record<string, string> | null;
     }) => {
       let result;
       try {
@@ -1396,6 +1397,7 @@ export async function handleChatCore({
             log,
             extendedContext,
             upstreamExtraHeaders: buildUpstreamHeadersForExecute(modelToCall),
+            clientHeaders: clientRawRequest?.headers ?? null,
           });
 
           // Qwen 429 strict quota backoff (wait 1.5s, 3s and retry)
@@ -1595,6 +1597,7 @@ export async function handleChatCore({
           log,
           extendedContext,
           upstreamExtraHeaders: buildUpstreamHeadersForExecute(retryModelId),
+          clientHeaders: clientRawRequest?.headers ?? null,
         });
 
         if (retryResult.response.ok) {
@@ -1953,6 +1956,7 @@ export async function handleChatCore({
               signal: streamController.signal,
               log,
               extendedContext,
+              clientHeaders: clientRawRequest?.headers ?? null,
             });
             if (fbResult.response.ok) {
               provider = fbDecision.provider;

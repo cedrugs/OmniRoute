@@ -61,6 +61,8 @@ export type ExecuteInput = {
   extendedContext?: boolean;
   /** Merged after auth + CLI fingerprint headers (values override same-named defaults). */
   upstreamExtraHeaders?: Record<string, string> | null;
+  /** Original client request headers (read-only). Executors may forward select headers upstream. */
+  clientHeaders?: Record<string, string> | null;
 };
 
 /** Apply model-level extra upstream headers (e.g. Authentication, X-Custom-Auth). */
